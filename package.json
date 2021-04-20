@@ -1,0 +1,25 @@
+{
+  "name": "DCWFinal",
+  "version": "1.0.0",
+  "description": "Mini Project",
+  "main": "menu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brownies15323/DCW_Final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brownies15323/DCW_Final/issues"
+  },
+  "homepage": "https://github.com/brownies15323/DCW_Final#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
