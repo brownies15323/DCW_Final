@@ -77,8 +77,11 @@ export default function Register({ token }) {
             <Head>
                 <title>Register</title>
             </Head>
-            <div className={styles.container}>
+            
+            <div className={styles.Navbar}>
                 <Navbar />
+                </div>
+            <div className={styles.container}>
                 <h1>Register</h1>
                 <div><b>Token:</b> {token.substring(0, 15)}...
                 <button

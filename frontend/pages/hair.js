@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout from '../components/layout' 
 import Navbar from '../components/navbar'
 import Menubar from '../components/menubar'
+import Hairbar from '../components/hairbar'
 import styles from '../styles/Home.module.css'
 
 export default function Home({ token }) {
@@ -9,7 +10,7 @@ export default function Home({ token }) {
   return (
     <Layout>
     <Head>
-        <title>First Page</title>
+        <title>Skin Care</title>
     </Head>
     <div className={styles.Navbar}>
                 <Navbar />
@@ -23,12 +24,11 @@ export default function Home({ token }) {
       <div className={styles.Menubar}>
           <Menubar />
       </div>
-      <br/>
-      <br/>
-      <div className={styles.b}>
-      <img src="https://i.pinimg.com/originals/35/18/a4/3518a4c5ec496c0d1e5c47fc355de146.jpg"
-            width="500" height="500">
-              </img>
+
+      <div className={styles.Menubar}>
+
+          <Hairbar />
+
       </div>
 
     </div>

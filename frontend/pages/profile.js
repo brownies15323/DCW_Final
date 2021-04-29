@@ -62,8 +62,10 @@ const Profile1 = ({token}) => {
             <Head>
                 <title>Student profile</title>
             </Head>
-            <div className={styles.container}>
+            <div className={styles.Navbar}>
                 <Navbar />
+            </div>
+            <div className={styles.container}>
                 <div>
                     <h1>Students profile</h1>
                     {showStudents()}
