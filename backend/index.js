@@ -22,10 +22,11 @@ router.use(cors({ origin: 'http://localhost:3000', credentials: true }))
 router.use(express.json())
 router.use(express.urlencoded({ extended: false }))
 
-let students = {
+let members = {
     list: [
-        { "id": 4010341, "name": "Warodom", "surname": "Werapun","major": "CoE","gpa": 3.3 },
-        { "id": 4010342, "name": "John", "surname": "Lennon","major": "SE","gpa": 2.87 }]
+        { "id": 4010341, "name": "Warodom", "surname": "Werapun"},
+        { "id": 4010342, "name": "John", "surname": "Lennon"},
+        { "id": 4010342, "name": "Santi", "surname": "Rittijan"}]
  }
 
 
@@ -108,40 +109,36 @@ router.get('/foo',
         res.send('Foo');
     });
 
-router.route('/students')
-    .get((req, res) => res.json(students))
+router.route('/members')
+    .get((req, res) => res.json(members))
     .post((req, res) => {
      console.log(req.body)
-     let newStudent = {}
-     newStudent.id = (students.list.length)?students.list[students.list.length - 1].id + 1:1
-     newStudent.name = req.body.name
-     newStudent.surname = req.body.surname
-     newStudent.major = req.body.major
-     newStudent.gpa = req.body.gpa
-     students = { "list": [...students.list, newStudent] }
-     res.json(students)
+     let newMember = {}
+     newMember.id = (members.list.length)?members.list[members.list.length - 1].id + 1:1
+     newMember.name = req.body.name
+     newMember.surname = req.body.surname
+     members = { "list": [...members.list, newMember] }
+     res.json(members)
      })
  
- router.route('/students/:student_id')
+ router.route('/members/:member_id')
     .get((req, res) => {
-        const student_id = req.params.student_id
-        const id = students.list.findIndex(item => +item.id === +student_id)
-        res.json(students.list[id])
+        const member_id = req.params.member_id
+        const id = members.list.findIndex(item => +item.id === +member_id)
+        res.json(members.list[id])
     })
     .put((req, res) => {
-     const student_id = req.params.student_id
-     const id = students.list.findIndex(item => +item.id === +student_id)
-     students.list[id].name = req.body.name
-     students.list[id].surname = req.body.surname
-     students.list[id].major = req.body.major
-     students.list[id].gpa = req.body.gpa
-     res.json(students.list[id])
+     const member_id = req.params.member_id
+     const id = members.list.findIndex(item => +item.id === +member_id)
+     members.list[id].name = req.body.name
+     members.list[id].surname = req.body.surname
+     res.json(members.list[id])
      })
      .delete((req, res) => {
-     const student_id = req.params.student_id
-     console.log('studentId: ',student_id)
-     students.list = students.list.filter(item => +item.id !== +student_id)
-     res.json(students.list)
+     const member_id = req.params.member_id
+     console.log('memberId: ',member_id)
+     members.list = members.list.filter(item => +item.id !== +member_id)
+     res.json(members.list)
      })
 
 router.get('/editProfile',
