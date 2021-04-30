@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Navbar from '../components/navbar'
 import Menubar from '../components/menubar'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home({ token }) {
 
@@ -42,7 +43,10 @@ export default function Home({ token }) {
         <br/><h4>คุณประโยชน์</h4>
         <br/>อุดมด้วยน้ำมันธรรมชาติอย่าง Rose Oil, Tuberose, Sandalwood และ Evening Primrose
         <br/>ช่วยให้ผิวที่แห้งกร้านกลับเนียนนุ่มชุ่มชื่น
-       
+        <br/><br/>
+        <div className={styles.f}>
+        <Link href="https://www.sephora.co.th/products/this-works-skin-deep-dry-leg-oil/v/skin-deep-dry-leg-oil"><a> ซื้อสินค้า </a></Link>
+        </div>
         </p>
 
     </div>

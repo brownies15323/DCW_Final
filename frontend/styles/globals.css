@@ -10,6 +10,8 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 * {

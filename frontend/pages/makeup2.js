@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Navbar from '../components/navbar'
 import Menubar from '../components/menubar'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home({ token }) {
 
@@ -45,7 +46,10 @@ export default function Home({ token }) {
         <br/>• Non-drying
         <br/>• Visibly reduces the appearance of pores with PoreAway
         <br/>• Vegan and cruelty free
-       
+        <br/><br/>
+        <div className={styles.f}>
+        <Link href="https://www.sephora.co.th/products/hourglass-vanish-blush-stick/v/wonder"><a> ซื้อสินค้า </a></Link>
+        </div>
         </p>
 
     </div>

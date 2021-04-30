@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Navbar from '../components/navbar'
 import Menubar from '../components/menubar'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home({ token }) {
 
@@ -43,7 +44,10 @@ export default function Home({ token }) {
 
 
         <br/>มีโปรตีนและสารสกัดที่ช่วยบำรุงให้ผมแข็งแรง ป้องกันการขาดความชุ่มชื้น มอบความนุ่มลื่นเงางามและทำหน้าที่เป็นเกราะป้องกันความร้อนให้กับเส้นผม นอกจากนี้ยังมีน้ำมันต่อต้านอนุมูลอิสระเข้มข้นสกัดจากเมล็ด sacha รวมถึง marula และ argan ที่ช่วยเพิ่มความชุ่มชื้นให้กับเส้นผมโดยไม่ทำให้ผมลีบแบน กรมอมิโนหลายชนิดที่ช่วยเสริมให้ผมแข็งแรง และปรับปรุงเส้นผมระยะยาวให้ผมดูสุขภาพดีขึ้น เด้ง สวย และPanthenol และ sodium PCA ทำให้ผมมีน้ำหนักและป้องกันการขาดน้ำ
-       
+        <br/><br/>
+        <div className={styles.f}>
+        <Link href="https://www.sephora.co.th/products/drunk-elephant-cocomino-glossing-shampoo/v/240ml"><a> ซื้อสินค้า </a></Link>
+        </div>
         </p>
 
     </div>

@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Navbar from '../components/navbar'
 import Menubar from '../components/menubar'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home({ token }) {
 
@@ -43,7 +44,10 @@ export default function Home({ token }) {
         <br/>ด้วยการผสมผสานระหว่างน้ำมันสกัดจากพืช butters squalane และกรดอะมิโนที่ช่วยเพิ่มความแข็งแรงให้ผิว ผสมผสานซีราไมด์ 5 ชนิด และสารที่ช่วยเพิ่มเกราะป้องกันผิวอย่างโซเดียม PCA ผลิตภัณฑ์ Sili ™ ช่วยล็อคในความชุ่มชื้นในผิว และในขณะเดียวกันก็คืนความชุ่มชื้นที่ผิวคุณสูญเสียไป
 
         <br/>นอกจากนี้เรายังเพิ่มกสารต้านอนุมูลอิสระจากผลไม้ มีโพลีฟีนอลคุณภาพสูงและสารประกอบแคโรทีนอยด์ เช่น เบต้าแคโรทีน คาคาดูพลัม มะม่วง และหยวกกล้วย ซึ่งให้การปกป้องผิวอย่างมีประสิทธิภาพ Sili ™มีค่า pH ที่เหมาะกับผิว 4.2"
-       
+        <br/><br/>
+        <div className={styles.f}>
+        <Link href="https://www.sephora.co.th/products/drunk-elephant-sili-body-lotion/v/240ml"><a> ซื้อสินค้า </a></Link>
+        </div>
         </p>
 
     </div>

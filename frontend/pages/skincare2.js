@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Navbar from '../components/navbar'
 import Menubar from '../components/menubar'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home({ token }) {
 
@@ -42,7 +43,10 @@ export default function Home({ token }) {
         <br/><h4>คุณประโยชน์</h4>
 
         <br/>ถึงเวลามอบของขวัญด้วยเซตผลิตภัณฑ์บำรุงผิวอันยอดเยี่ยม เริ่มจาก Soy Face Cleanser แล้วมาปลอบประโลมผิวด้วย Rose Face Mask เพิ่มความกระจ่างใสด้วย Lotus Moisturizer และเติมความชุ่มชื้นแก่ริมฝีปากด้วย Sugar Advanced Therapy แล้วไม่ใช่แค่เท่านั้น! เพราะนี่เป็นแพ็กเกจของขวัญที่ไม่มีพลาสติกแถมรีไซเคิลได้ด้วย (โปรดทำตามคำแนะนำการรีไซเคิลของประเทศที่คุณอาศัยอยู่)
-
+        <br/><br/>
+        <div className={styles.f}>
+        <Link href="https://www.sephora.co.th/products/fresh-skincare-discovery-gift-set-limited-edition/v/default"><a> ซื้อสินค้า </a></Link>
+        </div>
         </p>
 
     </div>

@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Navbar from '../components/navbar'
 import Menubar from '../components/menubar'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home({ token }) {
 
@@ -45,7 +46,10 @@ export default function Home({ token }) {
 Vegan & Cruelty-free ไม่มีส่วนผสมที่ทำมาจากสัตว์ และไม่ทดสอบผลิตภัณฑ์กับสัตว์
 เหมาะสำหรับผิวแบบไหน? ✔ ผิวธรรมดา ✔ ผิวมัน ✔ ผิวผสม
 ✔ ผิวแห้ง
-       
+<br/><br/>
+        <div className={styles.f}>
+        <Link href="https://www.sephora.co.th/products/anastasia-beverly-hills-luminous-foundation/v/100n"><a> ซื้อสินค้า </a></Link>
+        </div>
         </p>
 
     </div>

@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Navbar from '../components/navbar'
 import Menubar from '../components/menubar'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home({ token }) {
 
@@ -45,7 +46,10 @@ export default function Home({ token }) {
         <br/>สามารถใช้ได้ทุกวัน
         <br/>เหมาะสำหรับเส้นผมทุกประเภท
         <br/>มาพร้อมกลิ่นหอมหรูหราที่เป็นเอกลักษณ์ของ Kristin Ess
-       
+        <br/><br/>
+        <div className={styles.f}>
+        <Link href="https://www.sephora.co.th/products/kristin-ess-the-one-signature-conditioner/v/59ml"><a> ซื้อสินค้า </a></Link>
+        </div>
         </p>
 
     </div>

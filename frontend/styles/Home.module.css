@@ -23,16 +23,17 @@ margin-bottom: 16px;
 .gridContainer>div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: left;
-    padding: 10px 0;
+    padding: 10px;
     font-size: 1.2rem;
 }
 
 .gridContainer>div>input {
     width: 80%;
-    padding: 2px 2px;
+    padding: 2px 5px;
     margin: 0px 0;
     box-sizing: border-box;
     font-size: 1.2rem;
+    background-color: rgb(255, 219, 253);
 }
 
 
@@ -54,4 +55,15 @@ margin-bottom: 16px;
 
 .paragaph {
     padding: 50px 500px 50px 500px;
+}
+
+.border {
+    border-color: black;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 50px 500px 50px 500px;
+}
+
+.f {
+    color: red;
 }

@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Navbar from '../components/navbar'
 import Menubar from '../components/menubar'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home({ token }) {
 
@@ -44,7 +45,10 @@ export default function Home({ token }) {
         dewy canvas for makeup. Banana Bright, inspired by "banana powder," targets dark circles and improves concealer wear.
          Get youth-boosting results you can C with these 3 favorites.
          The set includes: * 0.5fl.oz/15ml Truth Serum * 1.2fl.oz/35mL C-Rush Brightening Gel Crème * 0.25fl.oz/7mL Banana Bright Eye Crème
-       
+         <br/><br/>
+         <div className={styles.f}>
+        <Link href="https://www.sephora.co.th/products/ole-henriksen-lets-get-luminous-brightening-essentials-skincare-set/v/default"><a> ซื้อสินค้า </a></Link>
+        </div>
         </p>
 
     </div>
