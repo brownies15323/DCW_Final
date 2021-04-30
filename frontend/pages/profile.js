@@ -8,7 +8,7 @@ import config from '../config/config'
 import useSWR, { mutate } from 'swr'
 import Link from 'next/link'
 
-const URL = `http://localhost/api/students`
+const URL = `http://localhost/api/members`
 const fetcher = url => axios.get(url).then(res => res.data)
 
 
@@ -38,17 +38,17 @@ const Profile1 = ({token}) => {
    if (!data) return <div>Loading...</div>
   //  console.log(data)
 
-  const showStudents = () => {
+  const showMembers = () => {
     if (data.list && data.list.length) {
-      return data.list.map((student, index) => {
+      return data.list.map((member, index) => {
         return (
           <div className={styles.listItem} key={index}>
-            <div><b>Name:</b> {student.name}</div>
-            <div><b>Surname:</b> {student.surname}</div>
-             <div> <b>Major:</b> {student.major} </div>
-            <div><b>GPA:</b> {student.gpa}</div>
-            <br/>
-            <div><Link href="/editProfile"><a><b>Edit data</b> </a></Link> </div>
+            <div className={styles.border}>
+              <div><b>Name:</b> {member.name}</div>
+              <div><b>Surname:</b> {member.surname}</div>
+              <br/>
+              <div><Link href="/editProfile"><a><b>Edit data</b> </a></Link> </div><br/>
+            </div>
           </div>
         );
       });
@@ -60,15 +60,17 @@ const Profile1 = ({token}) => {
     return (
         <Layout>
             <Head>
-                <title>Student profile</title>
+                <title>Members profile</title>
             </Head>
             <div className={styles.Navbar}>
                 <Navbar />
             </div>
             <div className={styles.container}>
                 <div>
-                    <h1>Students profile</h1>
-                    {showStudents()}
+                    <center>
+                    <h1>Members profile</h1>
+                    </center>
+                    {showMembers()}
                 </div>
             </div>
         </Layout>

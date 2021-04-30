@@ -45,7 +45,7 @@ export default function Login({ token }) {
         <input id="remember_me" name="remember_me" type="checkbox" onClick={rememberMe} />
       </div> 
 
-      <div><label>Remember Me</label></div>
+      <div><screenLeft><label>Remember Me</label></screenLeft></div>
     </div>
   );
 
@@ -73,6 +73,11 @@ export default function Login({ token }) {
         {loginForm()}
         <div>
           <button onClick={login}>Login</button>
+        </div>
+        <div>
+        <img src="https://cdn0.iconfinder.com/data/icons/beauty-cosmetics-set/128/Full_Beauty_Cosmetics_Line_Icons_Live-12-512.png"
+            width="500" height="500">
+              </img>
         </div>
       </div>
     </Layout>
